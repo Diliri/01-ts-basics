@@ -1,5 +1,4 @@
 // npm i axios
-// npm i zod
 export { };
 
 import axios from "axios";
