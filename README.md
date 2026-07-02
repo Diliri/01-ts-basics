@@ -13,7 +13,7 @@
 У цьому фрагменті коду оголошені три змінні з різними типами значень: текст, число і булеве значення.
 
 
-
+```js
 const name = "Alice";
 const age = 30;
 const isOnline = true;
@@ -21,7 +21,7 @@ const isOnline = true;
 console.log(`Name: ${name}`);
 console.log(`Age: ${age}`);
 console.log(`Online: ${isOnline}`);
-
+```
 
 
 Завдання:
@@ -38,7 +38,7 @@ console.log(`Online: ${isOnline}`);
 У цьому фрагменті коду є об'єкт product, який описує товар.
 
 
-
+```js
 const product = {
   id: 1,
   title: "Tablet",
@@ -46,7 +46,7 @@ const product = {
 };
 
 console.log(`Product: ${JSON.stringify(product)}`);
-
+```
 
 
 Завдання:
@@ -65,7 +65,7 @@ console.log(`Product: ${JSON.stringify(product)}`);
 У цьому коді є три масиви з різними типами даних: рядки, числа та об’єкти.
 
 
-
+```js
 const usernames = ["alice", "bob", "charlie"];
 
 const ratings = [4.5, 3.8, 5];
@@ -78,7 +78,7 @@ const products = [
 console.log(`Usernames: ${JSON.stringify(usernames)}`);
 console.log(`Ratings: ${JSON.stringify(ratings)}`);
 console.log(`Products: ${JSON.stringify(products)}`);
-
+```
 
 
 Завдання:
@@ -88,7 +88,7 @@ console.log(`Products: ${JSON.stringify(products)}`);
 Для масиву products:
 Створи окремий інтерфейс Product для елементів масиву.
 Типізуй сам масив за допомогою цього інтерфейсу.
-4. Залиш елементи масиву products без змін.
+Залиш елементи масиву products без змін.
 
 
 
@@ -99,7 +99,7 @@ console.log(`Products: ${JSON.stringify(products)}`);
 Функція printUserInfo виводить інформацію про користувача, включаючи ім’я, вік і (опціонально) email.
 
 
-
+```js
 function printUserInfo(name, age, email) {
   console.log("Name:", name);
   console.log("Age:", age);
@@ -110,7 +110,7 @@ function printUserInfo(name, age, email) {
 
 printUserInfo("Alice", 30);
 printUserInfo("Bob", 25, "bob@mail.com");
-
+```
 
 
 Завдання:
@@ -128,7 +128,7 @@ printUserInfo("Bob", 25, "bob@mail.com");
 Функція logStatus приймає рядок status і виводить відповідне повідомлення.
 
 
-
+```js
 function logStatus(status) {
   if (status === "loading") {
     console.log("Loading...");
@@ -140,7 +140,7 @@ function logStatus(status) {
 }
 
 logStatus("loading");
-
+```
 
 
 Завдання:
@@ -158,7 +158,7 @@ logStatus("loading");
 Функція getFirstElement приймає масив і повертає його перший елемент.
 
 
-
+```js
 function getFirstElement(arr) {
   return arr[0];
 }
@@ -166,7 +166,7 @@ function getFirstElement(arr) {
 getFirstElement([1, 2, 3]);           // 1
 getFirstElement(["a", "b", "c"]);     // "a"
 getFirstElement([true, false, true]); // true
-
+```
 
 
 Завдання:
@@ -184,7 +184,7 @@ getFirstElement([true, false, true]); // true
 Функція getMessage повертає проміс, який через затримку повертає рядок.
 
 
-
+```js
 function getMessage() {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -194,7 +194,7 @@ function getMessage() {
 }
 
 getMessage().then(result => console.log(result));
-
+```
 
 
 Завдання:
@@ -210,7 +210,7 @@ getMessage().then(result => console.log(result));
 Функція fetchPosts робить GET-запит до API та повертає список постів.
 
 
-
+```js
 import axios from "axios";
 
 async function fetchPosts() {
@@ -223,7 +223,7 @@ async function fetchPosts() {
 fetchPosts().then((posts) => {
   console.log(posts[0].title);
 });
-
+```
 
 
 Завдання:
@@ -233,4 +233,4 @@ fetchPosts().then((posts) => {
 id: число
 title: рядок
 body: рядок
-3. Типізуй axios.get, щоб вказати, що API повертає масив постів.
+Типізуй axios.get, щоб вказати, що API повертає масив постів.
